@@ -1,0 +1,28 @@
+html
+	script(src="SIPform/index.js")
+	head
+		title=title
+	body
+		p=datas
+
+		// Wrapper
+		#wrapper
+
+			// ADD USER
+			h2 Add Child Entry
+			#addChild
+				form(class='form', action='/', method='POST')
+					fieldset
+						input#inputCID(type='text', minlength='7', maxlength='7', placeholder='Child ID', name="childID")
+						br
+						input#inputMID(type='text', placeholder='Mother ID', name="motherID")
+						br
+						input#inputDOB(type='date', placeholder='Date of Birth', name="DOB")
+						br
+						input#inputRace(type='text', placeholder='Race', name="race")
+						br
+						input#inputGender(type='text', placeholder='Gender', name="gender")
+						br
+						button#btnAddUser Add Child
+			// /ADD USER
+		// /WRAPPER
